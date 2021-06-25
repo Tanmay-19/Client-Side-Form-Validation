@@ -14,8 +14,8 @@ public class FirstServlet extends HttpServlet
           response.setContentType("text/html");  
           PrintWriter out = response.getWriter();  
           
-          String n=request.getParameter("username");  
-          String p=request.getParameter("userpass");  
+          String n=request.getParameter("admin");  
+          String p=request.getParameter("password");  
           if(LoginDao.validate(n, p))
           {  
                RequestDispatcher rd=request.getRequestDispatcher("servlet2");  
